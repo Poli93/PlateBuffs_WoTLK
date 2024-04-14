@@ -247,13 +247,11 @@ local defaultSpells2 = {
 	
 	853, -- HOJ
 	31842, -- Divine Illumination
-	25771, -- Forbearance 
-	53601, -- Sacred Shield
 	19752, -- Divine Intervention 
 	64205, -- Divine Sacrifice
 	20216, -- Divine Favor
 	54428, -- Divine Plea
-	59578, -- Art of War
+
 	
 	-- warrior
 	871, -- shield wall
@@ -323,10 +321,17 @@ local defaultSpells3 = {
 	--5782 -- Fear
 	-- mage
 	43008, -- Ice Armor
+	168, -- Frost Armor
 	43024, -- Mage Armor
 	43046, -- Molten Armor
+	
 	-- priest
 	15286, -- Vampiric Embrace
+	
+	-- paladin
+	59578, -- Art of War
+	25771, -- Forbearance 
+	53601, -- Sacred Shield
 	
 	-- dmg racials
 	33697, -- blood fury
