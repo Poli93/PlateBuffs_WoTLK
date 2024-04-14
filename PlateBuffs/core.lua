@@ -38,7 +38,7 @@ core.L = L
 local totemList = {
 	2484, --Earthbind Totem
 	8143, --Tremor Totem
-	8177, --Grounding Totem ?
+	8177, --Grounding Totem
 	8512, --Windfury Totem
 	6495, --Sentry Totem
 	8170, --Cleansing Totem
@@ -109,24 +109,28 @@ local defaultSpells1 = {
 -- semi-important spells, add them with mid size icons.
 local defaultSpells2 = {
 	-- mage
-	12472, --Icy Veins (mage)
-	44572, --Deep Freeze (mage)
+	12472, -- Icy Veins (mage)
+	44572, -- Deep Freeze (mage)
 	122, -- frost nova
+	12494, --frostbite
+	55080, -- shattered barrier
 	31661, -- dragon's breath
 	33395, -- freeze (pet nova)
-	12042, --Arcane Power
-	38643, --Blink
+	12042, -- Arcane Power
+	38643, -- Blink
 	41425, -- Hypothermia 
 	44543, -- Fingers of Frost
 	12357, -- Impact
-	28500, --Invisibility 
-	31641, --Blazing Speed
-	54749, --Burning Determination
-	12043, --Presence of Mind
+	28500, -- Invisibility 
+	31641, -- Blazing Speed
+	54749, -- Burning Determination
+	12043, -- Presence of Mind
+	12051 , -- Evocation
 	43039, --Ice Barrier
-	12051 , --Evocation
-	43008, --Ice Armor
-	43024, --Mage Armor
+	18469, -- improved counterspell
+	64346, --fiery payback
+	28682, -- combustion
+	
 	-- shaman
 	16166, -- elemental mastery
 	8178, -- grounding totem
@@ -134,18 +138,27 @@ local defaultSpells2 = {
 	30823, -- Shamanistic Rage
 	55600, -- Earth Shield
 	53819, -- Maelstrom weapon
-	16188, --Ancestral Swiftness
+	16188, -- Ancestral Swiftness
+	55277, -- stoneclaw absorb
+	58875, -- spirit walk (spirit wolf)
+	58861, -- bash (spirit wolf)
+	16191, -- mana tide totem
+	
 	-- warlock
 	19647, -- spelllock
 	30283, -- shadowfury
 	18708, -- Fel Domination
-	8612, --Phase Shift
-	20329, --Phase Shift
-	47241, --Metamorphosis
+	8612, -- Phase Shift
+	20329, -- Phase Shift
+	47241, -- Metamorphosis
+  	7812, -- sacrifice (voidwalker)
+	6229, -- shadow ward
+	30299, -- nether protection
+	
 	-- rogue
-	31224, --Cloak of Shadows (rogue)
-	5277, --Evasion (rogue)
-	11305, --Sprint
+	31224, -- Cloak of Shadows (rogue)
+	26669, -- Evasion (rogue)
+	11305, -- Sprint
 	408, -- kidney shot
 	1833, -- cheap shot
 	1776, -- gouge
@@ -159,33 +172,36 @@ local defaultSpells2 = {
 	13877, -- Blade Flurry	51722, --Dismantle
 	51713, --Shadow Dance
 	14177, --Cold Blood
+	
 	-- priest
 	15487, --Silence (priest)
 	10060, --Power Infusion (priest)
 	64044, --Psychic Horror
-	15286, -- Vampiric Embrace
 	10060, -- power's infusion
 	27827, -- Spirit of Redemption
 	6346, -- Fear Ward
 	6788, --Weakend Soul
+	
 	-- druid
-	22812, --Barkskin (druid)
-	53312, --Nature's Grasp
-	1850, --Dash
-	2637, --Hibernate
-	16689, --Nature's Grasp (Druid)
+	--52610, -- savage roar 
+	22812, -- Barkskin (druid)
+	53312, -- Nature's Grasp
+	1850, -- Dash
+	2637, -- Hibernate
+	16689, -- Nature's Grasp (Druid)
 	5211, -- bash
 	22570, -- maim
 	69369, -- Predatory Swiftness
-	16811, --Nature's Grasp
-	49803, --Pounce
-	53201, --Starfall
-	50334, --Berserk
-	22842, --Frenzied Regeneration
-	19675, --Feral Charge Effect
-	38373, --The Beast Within
-	9634, --bear form
-	17116, --Nature's Swiftness
+	16811, -- Nature's Grasp
+	49803, -- Pounce
+	53201, -- Starfall
+	50334, -- Berserk
+	22842, -- Frenzied Regeneration
+	19675, -- Feral Charge Effect
+	38373, -- The Beast Within
+	9634, -- dire bear form
+	17116, -- Nature's Swiftness
+	
 	-- hunter
 	37587, --Bestial Wrath (hunter)
 	19574, --Bestial Wrath
@@ -209,6 +225,9 @@ local defaultSpells2 = {
 	26064, -- Shell Shield (pet)
 	26065, -- Shell Shield (pet)
 	40087, -- Shell Shield (pet)
+	34074, -- aspect of the viper
+	64804, -- Entrapment
+	
 	-- paladin
 	53563, --Beacon of Light (pally)
 	498, --Divine Protection
@@ -224,6 +243,8 @@ local defaultSpells2 = {
 	31821, -- aura mastery
 	31850, -- ardent defender
 	66235, -- ardent defender
+	53659, -- sacred cleansing
+	
 	853, -- HOJ
 	31842, -- Divine Illumination
 	25771, -- Forbearance 
@@ -232,7 +253,8 @@ local defaultSpells2 = {
 	64205, -- Divine Sacrifice
 	20216, -- Divine Favor
 	54428, -- Divine Plea
-	53486, -- Art of War
+	59578, -- Art of War
+	
 	-- warrior
 	871, -- shield wall
 	5246, --Intimidating Shout (warrior)
@@ -245,15 +267,18 @@ local defaultSpells2 = {
 	2565, -- Shield Block
 	676, -- Disarm
 	12292, -- Death Wish
-	12809, --Concussion Blow
-	18498, --Gag Order
-	3411, --Intervene
-	55694, 	--Enraged Regeneration
-	12328, --Sweeping Strikes
-	20230, --Retaliation
-	64849, --Unrelenting Assault
+	12809, -- Concussion Blow
+	18498, -- Gag Order
+	3411, -- Intervene
+	55694, 	-- Enraged Regeneration
+	12328, -- Sweeping Strikes
+	20230, -- Retaliation
+	64849, -- Unrelenting Assault
 	12976, -- Last Stand
-	60503, --Taste For Blood
+	60503, -- Taste For Blood
+	23694, -- Improved Hamstring
+	58373, -- Glyph of Hamstring
+	
 	-- dk
 	47476, --Strangulate (dk) 55334?
 	49039, --Lichborne (DK)
@@ -265,16 +290,8 @@ local defaultSpells2 = {
 	48263, -- Frost Presence
 	51271, -- Unbreakable Armor
 	55233, -- Vampiric Blood
-	-- trinkets 
-	60436, -- Grim Toll
-	71541, -- Icy Rage (WFS)
-	67772, -- Paragon (DV HC)
-	75456, -- Piercing Twilight (STS)
-	71560, --Speed of the Vrykul (DBW)
-	71486, --Power of the Taunka (DBW)
-	71484, -- TANUKA DBW
-	55775, --Swordguard Embroidery (tailoring proc)
-	71636, --Siphoned Power (phylactery proc)
+	51209, -- hungering cold
+	45524, -- chains of ice
 	
 	-- misc
 	72623,  --Drink
@@ -303,7 +320,45 @@ local defaultSpells2 = {
 
 -- used to add spell only by name ( no need spellid )
 local defaultSpells3 = {
-	5782 -- Fear
+	--5782 -- Fear
+	-- mage
+	43008, -- Ice Armor
+	43024, -- Mage Armor
+	43046, -- Molten Armor
+	-- priest
+	15286, -- Vampiric Embrace
+	
+	-- dmg racials
+	33697, -- blood fury
+	26297, -- berserking
+		-- trinkets 
+	60436, -- Grim Toll
+	65020, -- Mjolnir Runestone
+	71541, -- Icy Rage (WFS)
+	67772, -- Paragon (DV HC)
+	67708, -- Paragon (DV NM)
+	75456, -- Piercing Twilight (STS) HC
+	75458, -- Piercing Twilight (STS) NM
+	75473, -- CTS HC
+	75466, -- CTS NM
+	71601, -- DFO NM 
+	71644, -- DFO HC
+	55775, -- Swordguard Embroidery (tailoring ap proc)
+	55637, -- Lightweave (tailoring sp proc
+	71636, -- Siphoned Power (phylactery hc)
+	71605, -- Siphoned Power (phylactery nm)
+	-- DBW HC
+	71556, -- AGI
+	71559, -- CRIT
+	71558, -- AP
+	71560, -- HASTE Speed of the Vrykul
+	71561, -- STR	
+	-- DBW NM
+	71484, -- STR 
+	71492, -- HASTE 
+	71486, -- AP Power of the Taunka
+	71491, -- CRIT
+	71485 -- AGI
 }
 
 local regEvents = {
@@ -383,15 +438,17 @@ for i = 1, table_getn(defaultSpells2) do
 	end
 end
 
+
 for i = 1, table_getn(defaultSpells3) do
 	local spellName = GetSpellInfo(defaultSpells3[i])
 	if spellName then
 		core.defaultSettings.profile.spellOpts[spellName] = {
-			spellID = "No SpellID",
-			increase = 1.5,
-			cooldownSize = 14,
+			--spellID = "No SpellID", -- wasn't used anyway, making it a lesser important buffs category
+			spellID = defaultSpells3[i],
+			increase = 1,
+			cooldownSize = 10,
 			show = 1,
-			stackSize = 14
+			stackSize = 10
 		}
 	end
 end
