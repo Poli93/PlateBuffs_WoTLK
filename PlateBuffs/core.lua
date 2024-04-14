@@ -84,14 +84,15 @@ local defaultSpells1 = {
 	33786, --Cyclone
 	339, --Entangling Roots
 	29166, --Innervate (druid)
+	61336, --survival instincts
 	-- hunter
-	19386 --Wyvern Sting (hunter)
+	19386, --Wyvern Sting (hunter)
 	-- paladin
 	642, --Divine Shield
 	-- misc
 	23335, -- Silverwing Flag (alliance WSG flag)
 	23333, -- Warsong Flag (horde WSG flag)
-	34976, -- Netherstorm Flag (EotS flag)
+	34976 -- Netherstorm Flag (EotS flag)
 	
 }
 
@@ -112,7 +113,7 @@ local defaultSpells2 = {
 	64044, --Psychic Horror
 	-- druid
 	22812, --Barkskin (druid)
-	1850 --Dash
+	1850, --Dash
 	2637, --Hibernate
 	16689, --Nature's Grasp (Druid)
 	-- hunter
@@ -144,7 +145,7 @@ local defaultSpells2 = {
 	17634, --Potion of Petrification
 	53905, --Indestructible Potion
 	54221, --Potion of Speed
-	67867, --Trampled (ToC arena spell when you run over someone)
+	67867 --Trampled (ToC arena spell when you run over someone)
 	
 }
 
