@@ -61,61 +61,82 @@ local totemList = {
 
 -- Important spells, add them with huge icons.
 local defaultSpells1 = {
+	-- mage
 	118, --Polymorph
+	45438, --Ice Block
+	-- shaman
 	51514, --Hex
+	-- warlock
 	710, --Banish
 	6358, --Seduction
-	6770, --Sap
-	605, --Mind Control
-	33786, --Cyclone
 	5782, --Fear
 	5484, --Howl of Terror
 	6789, --Death Coil
-	45438, --Ice Block
-	642, --Divine Shield
+	-- rogue
+	6770, --Sap
+	2094, --Blind
+	-- priest
+	605, --Mind Control
 	8122, --Psychic Scream
+	33206, --Pain Suppression (priest)
+	47585, --Dispersion (priest)
+	-- druid
+	33786, --Cyclone
 	339, --Entangling Roots
+	29166, --Innervate (druid)
+	-- hunter
+	19386 --Wyvern Sting (hunter)
+	-- paladin
+	642, --Divine Shield
+	-- misc
 	23335, -- Silverwing Flag (alliance WSG flag)
 	23333, -- Warsong Flag (horde WSG flag)
 	34976, -- Netherstorm Flag (EotS flag)
-	2094, --Blind
-	33206, --Pain Suppression (priest)
-	29166, --Innervate (druid)
-	47585, --Dispersion (priest)
-	19386 --Wyvern Sting (hunter)
+	
 }
 
 -- semi-important spells, add them with mid size icons.
 local defaultSpells2 = {
+	-- mage
+	12472, --Icy Veins (mage)
+	44572, --Deep Freeze (mage)
+	-- shaman
+	-- warlock
+	-- rogue
+	31224, --Cloak of Shadows (rogue)
+	5277, --Evasion (rogue)
+	2983, --Sprint (rogue)
+	-- priest
 	15487, --Silence (priest)
 	10060, --Power Infusion (priest)
-	2825, --Bloodlust
-	5246, --Intimidating Shout (warrior)
-	31224, --Cloak of Shadows (rogue)
-	498, --Divine Protection
-	47476, --Strangulate (warlock)
-	31884, --Avenging Wrath (pally)
+	64044, --Psychic Horror
+	-- druid
+	22812, --Barkskin (druid)
+	1850 --Dash
+	2637, --Hibernate
+	16689, --Nature's Grasp (Druid)
+	-- hunter
 	37587, --Bestial Wrath (hunter)
-	12472, --Icy Veins (mage)
+	34490, --Silencing Shot (hunter)
+	19503, --Scatter Shot (hunter)
+	1499, --Freezing Trap
+	-- paladin
+	53563, --Beacon of Light (pally)
+	31884, --Avenging Wrath (pally)
+	498, --Divine Protection
+	20066, --Repentance (pally)
+	10326, --Turn Evil (pally)
+	10278, --Hand of Protection (pally)
+	-- warrior
+	5246, --Intimidating Shout (warrior)
+	46924, --Bladestorm (warrior)
+	46968, --Shockwave (warrior)
+	-- dk
+	47476, --Strangulate (dk)
 	49039, --Lichborne (DK)
 	48792, --Icebound Fortitude (DK)
-	5277, --Evasion (rogue)
-	53563, --Beacon of Light (pally)
-	22812, --Barkskin (druid)
-	67867, --Trampled (ToC arena spell when you run over someone)
-	1499, --Freezing Trap
-	2637, --Hibernate
-	64044, --Psychic Horror
-	19503, --Scatter Shot (hunter)
-	34490, --Silencing Shot (hunter)
-	10278, --Hand of Protection (pally)
-	10326, --Turn Evil (pally)
-	44572, --Deep Freeze (mage)
-	20066, --Repentance (pally)
-	46968, --Shockwave (warrior)
-	46924, --Bladestorm (warrior)
-	16689, --Nature's Grasp (Druid)
-	2983, --Sprint (rogue)
+	-- misc
+	2825, --Bloodlust
 	2335, --Swiftness Potion
 	6624, --Free Action Potion
 	3448, --Lesser Invisibility Potion
@@ -123,7 +144,8 @@ local defaultSpells2 = {
 	17634, --Potion of Petrification
 	53905, --Indestructible Potion
 	54221, --Potion of Speed
-	1850 --Dash
+	67867, --Trampled (ToC arena spell when you run over someone)
+	
 }
 
 -- used to add spell only by name ( no need spellid )
