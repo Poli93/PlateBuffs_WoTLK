@@ -64,18 +64,22 @@ local defaultSpells1 = {
 	-- mage
 	118, --Polymorph
 	45438, --Ice Block
+	
 	-- shaman
 	51514, --Hex
+	
 	-- warlock
 	710, --Banish
 	6358, --Seduction
 	5782, --Fear
 	5484, --Howl of Terror
 	6789, --Death Coil
+	
 	-- rogue
 	6770, --Sap
 	2094, --Blind
 	31230, --cheat death
+	
 	-- priest
 	605, --Mind Control
 	8122, --Psychic Scream
@@ -83,20 +87,25 @@ local defaultSpells1 = {
 	47585, --Dispersion (priest)
 	9484, -- shackle undead
 	47788, -- guardian spirit
+	
 	-- druid
 	33786, --Cyclone
 	339, --Entangling Roots
 	29166, --Innervate (druid)
 	61336, --survival instincts
 	34496, --survival instincts
+	
 	-- hunter
 	19386, --Wyvern Sting (hunter)
 	19263, --Deterrence
+	
 	-- paladin
 	642, --Divine Shield
+	
 	-- warrior
 	23920, -- spell reflection
 	18499, -- berserker rage
+	
 	-- misc
 	23335, -- Silverwing Flag (alliance WSG flag)
 	23333, -- Warsong Flag (horde WSG flag)
@@ -119,7 +128,6 @@ local defaultSpells2 = {
 	12042, -- Arcane Power
 	38643, -- Blink
 	41425, -- Hypothermia 
-	44543, -- Fingers of Frost
 	12357, -- Impact
 	28500, -- Invisibility 
 	31641, -- Blazing Speed
@@ -136,8 +144,6 @@ local defaultSpells2 = {
 	8178, -- grounding totem
 	64695, -- earthgrab (earthbind root effect)
 	30823, -- Shamanistic Rage
-	55600, -- Earth Shield
-	53819, -- Maelstrom weapon
 	16188, -- Ancestral Swiftness
 	55277, -- stoneclaw absorb
 	58875, -- spirit walk (spirit wolf)
@@ -153,7 +159,6 @@ local defaultSpells2 = {
 	47241, -- Metamorphosis
   	7812, -- sacrifice (voidwalker)
 	6229, -- shadow ward
-	30299, -- nether protection
 	
 	-- rogue
 	31224, -- Cloak of Shadows (rogue)
@@ -168,7 +173,6 @@ local defaultSpells2 = {
 	45182, -- cheating death
 	14278, -- Ghostly Strike
 	36554, -- Shadowstep
-	58427, -- Overkill
 	13877, -- Blade Flurry	51722, --Dismantle
 	51713, --Shadow Dance
 	14177, --Cold Blood
@@ -183,7 +187,6 @@ local defaultSpells2 = {
 	6788, --Weakend Soul
 	
 	-- druid
-	--52610, -- savage roar 
 	22812, -- Barkskin (druid)
 	53312, -- Nature's Grasp
 	1850, -- Dash
@@ -191,7 +194,6 @@ local defaultSpells2 = {
 	16689, -- Nature's Grasp (Druid)
 	5211, -- bash
 	22570, -- maim
-	69369, -- Predatory Swiftness
 	16811, -- Nature's Grasp
 	49803, -- Pounce
 	53201, -- Starfall
@@ -225,7 +227,6 @@ local defaultSpells2 = {
 	26064, -- Shell Shield (pet)
 	26065, -- Shell Shield (pet)
 	40087, -- Shell Shield (pet)
-	34074, -- aspect of the viper
 	64804, -- Entrapment
 	
 	-- paladin
@@ -244,14 +245,12 @@ local defaultSpells2 = {
 	31850, -- ardent defender
 	66235, -- ardent defender
 	53659, -- sacred cleansing
-	
-	853, -- HOJ
+	853, -- Hammer of Justice
 	31842, -- Divine Illumination
 	19752, -- Divine Intervention 
 	64205, -- Divine Sacrifice
 	20216, -- Divine Favor
 	54428, -- Divine Plea
-
 	
 	-- warrior
 	871, -- shield wall
@@ -273,7 +272,6 @@ local defaultSpells2 = {
 	20230, -- Retaliation
 	64849, -- Unrelenting Assault
 	12976, -- Last Stand
-	60503, -- Taste For Blood
 	23694, -- Improved Hamstring
 	58373, -- Glyph of Hamstring
 	
@@ -285,31 +283,11 @@ local defaultSpells2 = {
 	47481, -- gnaw (pet stun)
 	48707 , -- Anti-Magic Shell
 	51052, -- Anti-Magic Zone
-	48263, -- Frost Presence
 	51271, -- Unbreakable Armor
 	55233, -- Vampiric Blood
 	51209, -- hungering cold
 	45524, -- chains of ice
 	
-	-- misc
-	72623,  --Drink
-	14823, --Drinking
-	25888, --Food
-	2825, --Bloodlust
-	32182, --Heroism
-	28730, --Arcane Torrent
-	7744, --Will of the Forsaken
-	53908, --Speed POT
-	54861, --Nitro Boots
-	61242, --Parachute
-	2335, --Swiftness Potion
-	6624, --Free Action Potion
-	6615, --Free Action Potion
-	3448, --Lesser Invisibility Potion
-	11464, --Invisibility Potion
-	17634, --Potion of Petrification
-	53905, --Indestructible Potion
-	54221, --Potion of Speed
 	30217, --Adamantite Grenade
 	24375, --War Stomp
 	67867 --Trampled (ToC arena spell when you run over someone)
@@ -324,18 +302,50 @@ local defaultSpells3 = {
 	168, -- Frost Armor
 	43024, -- Mage Armor
 	43046, -- Molten Armor
+	44543, -- Fingers of Frost
+	
+	-- shaman
+	55600, -- Earth Shield
+	53819, -- Maelstrom weapon
+	
+	-- warlock
+	30299, -- nether protection
+	
+	-- rogue
+	58427, -- Overkill
 	
 	-- priest
 	15286, -- Vampiric Embrace
+	15473, -- shadowform
 	
 	-- paladin
 	59578, -- Art of War
 	25771, -- Forbearance 
 	53601, -- Sacred Shield
+	54149, -- Infusion of Light
+	
+	-- druid
+	--52610, -- savage roar 
+	69369, -- Predatory Swiftness
+	48441, -- rejuvenation
+	48451, -- lifebloom
+	33891, -- tree form
+	783, -- travel form
+	768, -- feral form (?)
+	
+	-- warrior
+	60503, -- Taste For Blood
+	
+	-- dk
+	48263, -- Frost Presence
+
+	-- hunter
+	34074, -- aspect of the viper
 	
 	-- dmg racials
 	33697, -- blood fury
 	26297, -- berserking
+	
 		-- trinkets 
 	60436, -- Grim Toll
 	65020, -- Mjolnir Runestone
@@ -363,7 +373,27 @@ local defaultSpells3 = {
 	71492, -- HASTE 
 	71486, -- AP Power of the Taunka
 	71491, -- CRIT
-	71485 -- AGI
+	71485, -- AGI
+	
+		-- misc
+	72623,  --Drink
+	14823, --Drinking
+	25888, --Food
+	2825, --Bloodlust
+	32182, --Heroism
+	28730, --Arcane Torrent
+	7744, --Will of the Forsaken
+	53908, --Speed POT
+	54861, --Nitro Boots
+	61242, --Parachute
+	2335, --Swiftness Potion
+	6624, --Free Action Potion
+	6615, --Free Action Potion
+	3448, --Lesser Invisibility Potion
+	11464, --Invisibility Potion
+	17634, --Potion of Petrification
+	53905, --Indestructible Potion
+	54221 --Potion of Speed
 }
 
 local regEvents = {
