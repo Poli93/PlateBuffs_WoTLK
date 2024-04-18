@@ -173,7 +173,8 @@ local defaultSpells2 = {
 	45182, -- cheating death
 	14278, -- Ghostly Strike
 	36554, -- Shadowstep
-	13877, -- Blade Flurry	51722, --Dismantle
+	13877, -- Blade Flurry	
+	51722, --Dismantle
 	51713, --Shadow Dance
 	14177, --Cold Blood
 	
@@ -329,7 +330,7 @@ local defaultSpells3 = {
 	69369, -- Predatory Swiftness
 	48441, -- rejuvenation
 	48451, -- lifebloom
-	33891, -- tree form
+	33981, -- tree form
 	783, -- travel form
 	768, -- feral form (?)
 	
@@ -785,6 +786,7 @@ do
 			local i = 1
 			local name, icon, count, duration, expirationTime, unitCaster, spellId, debuffType
 
+			
 			while UnitBuff(unitID, i) do
 				name, _, icon, count, _, duration, expirationTime, unitCaster, _, _, spellId = UnitBuff(unitID, i)
 				icon = icon:upper():gsub("(.+)\\(.+)\\", "")
