@@ -180,12 +180,11 @@ local defaultSpells2 = {
 	
 	-- priest
 	15487, --Silence (priest)
-	10060, --Power Infusion (priest)
-	64044, --Psychic Horror
+	10060, -- Power Infusion (priest)
+	64044, -- Psychic Horror
 	10060, -- power's infusion
 	27827, -- Spirit of Redemption
 	6346, -- Fear Ward
-	6788, --Weakend Soul
 	
 	-- druid
 	22812, -- Barkskin (druid)
@@ -318,6 +317,7 @@ local defaultSpells3 = {
 	-- priest
 	15286, -- Vampiric Embrace
 	15473, -- shadowform
+	6788, -- Weakend Soul
 	
 	-- paladin
 	59578, -- Art of War
@@ -330,7 +330,7 @@ local defaultSpells3 = {
 	69369, -- Predatory Swiftness
 	48441, -- rejuvenation
 	48451, -- lifebloom
-	33981, -- tree form
+	33981, -- tree of life
 	783, -- travel form
 	768, -- feral form (?)
 	
