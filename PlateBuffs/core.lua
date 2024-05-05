@@ -286,6 +286,7 @@ local defaultSpells2 = {
 	55233, -- Vampiric Blood
 	51209, -- hungering cold
 	45524, -- chains of ice
+	49016, -- Hysteria
 	
 	30217, --Adamantite Grenade
 	24375, --War Stomp
