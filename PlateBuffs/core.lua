@@ -339,6 +339,7 @@ local defaultSpells3 = {
 	
 	-- dk
 	48263, -- Frost Presence
+	49222, -- bone shield
 
 	-- hunter
 	34074, -- aspect of the viper
