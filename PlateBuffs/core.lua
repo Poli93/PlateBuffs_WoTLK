@@ -78,6 +78,7 @@ local defaultSpells1 = {
 	-- rogue
 	6770, --Sap
 	2094, --Blind
+	31230, --cheat death
 	
 	-- priest
 	605, --Mind Control
